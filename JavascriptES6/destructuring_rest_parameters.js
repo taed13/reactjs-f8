@@ -22,3 +22,5 @@
 // var { name, price } = course;
 
 // console.log(name, price); 
+
+

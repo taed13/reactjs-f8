@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   const h1DOM = document.createElement("h1");
+
+      //   h1DOM.title = "ReactJS-F8";
+      //   h1DOM.className = "heading";
+
+      //   h1DOM.innerText = "Hello World!";
+
+      //   document.body.appendChild(h1DOM);
+
+      //   const h1React = React.createElement(
+      //     "h1",
+      //     {
+      //       title: "ReactJS-F8",
+      //       className: "heading",
+      //     },
+      //     "Hello World!"
+      //   );
+
+      //   const ulDOM = document.createElement("ul");
+
+      //   const liDOM1 = document.createElement("li");
+      //   liDOM1.innerText = "Item 1";
+
+      //   const liDOM2 = document.createElement("li");
+      //   liDOM2.innerText = "Item 2";
+
+      //   ulDOM.appendChild(liDOM1);
+      //   ulDOM.appendChild(liDOM2);
+
+      //   document.body.appendChild(ulDOM);
+
+      //   const ulReact = React.createElement(
+      //     "ul",
+      //     null,
+      //     React.createElement("li", null, "Item 1"),
+      //     React.createElement("li", null, "Item 2")
+      //   );
+
+      const divDOM = document.createElement("div");
+      divDOM.className = "post-item";
+
+      const h2DOM = document.createElement("h2");
+      h2DOM.title = "Học React tại F8";
+      h2DOM.innerText = "Học ReactJS";
+
+      const pDOM = document.createElement("p");
+      pDOM.innerText = "ReactJS là một thư viện JavaScript";
+
+      divDOM.appendChild(h2DOM);
+      divDOM.appendChild(pDOM);
+
+      console.log(divDOM);
+
+      const divReact = React.createElement(
+        "div",
+        { className: "post-item" },
+        React.createElement("h2", { title: "Học React tại F8" }, "Học ReactJS"),
+        React.createElement("p", null, "ReactJS là một thư viện JavaScript")
+      );
+    </script>
+  </body>
+</html>
